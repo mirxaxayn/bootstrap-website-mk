@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Georgia;
+
+  /*for shapes*/
+  /*	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+}
+a {
+  text-decoration: none;
+}
+
+.main-nav {
+  background-color: #17a2b8 !important;
+  z-index: 1000;
+  width: 98%;
+  margin: 2vh auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+.navbar-nav .nav-item a {
+  color: white;
+}
+
+.navbar-nav .nav-item a.active {
+  font-weight: bold;
+}
+.navbar-nav .nav-item a:hover {
+  border-bottom: 2px solid white;
+}
+
+.main-nav .navbar-toggler {
+  color: white;
+  border: 2px solid white;
+}
+.carousel-item img.main {
+  width: 60% !important;
+  height: 86.8vh;
+}
+.carousel-item img {
+  width: 20% !important;
+  height: 86.8vh;
+}
+
+.carousel-item .carousel-caption h5,
+.carousel-item .carousel-caption p {
+  color: black;
+}
+.carousel-item .carousel-caption h5 {
+  font-weight: bold;
+}
+
+a.carousel-control-prev i,
+a.carousel-control-next i {
+  color: #17a2b8 !important;
+  font-size: 30px;
+}
+a.carousel-control-prev,
+a.carousel-control-next {
+  color: transparent !important;
+}
+.carousel-item .carousel-content {
+  width: 100%;
+  height: 78.8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 8vh;
+}
+
+.carousel-item .carousel-content img {
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.carousel-indicators li {
+  background-color: #17a2b8 !important;
+}
+.navbar-nav .dropdown-menu {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+.dropdown-menu li a:hover {
+  color: white !important;
+  background: #17a2b8;
+}
+
+section {
+  margin: 20px 0;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom left,
+      #17a2b8 70%,
+      rgb(255, 255, 255) 0%
+    )
+    bottom left/153% 100%;
+  background-repeat: no-repeat;
+
+  /*Clipping BGs*/
+  /*clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 100%, 0 0);*/
+}
+
+section.project {
+  height: 50vh;
+}
+
+section.project .section-content {
+  height: 40vh;
+}
+
+.section-heading {
+  height: 10vh;
+  color: white;
+  margin-bottom: 20px;
+}
+.section-heading h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-heading h5:after {
+  content: "";
+  background: #fff;
+  display: block;
+  height: 5px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+section .section-content {
+  height: 86vh;
+}
+.card {
+  z-index: 1000;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s all;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+.card-title i {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-outline-orange {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+.btn-outline-orange:hover {
+  background: #17a2b8;
+  color: white;
+}
+.services .card {
+  transition: 0.3s all;
+}
+
+.project .card:hover .card-body i,
+.project .card:hover .card-body h1 {
+  color: #17a2b8;
+}
+
+.team .card:hover .card-body h5 {
+  color: #17a2b8;
+}
+
+.services .card:hover .card-title {
+  color: #17a2b8;
+}
+.card.card-center {
+  margin: 0 0;
+}
+.text-orange {
+  color: #17a2b8;
+}
+.aboutUs .card {
+  height: auto;
+  width: 70%;
+  transition: 0.3s all;
+}
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  transform: translateY(-10px);
+}
+p.about-para::first-letter {
+  color: #17a2b8;
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  float: left;
+  line-height: 1.5;
+}
+p.about-para {
+  text-align: justify;
+}
+.checker {
+  width: 300px;
+  text-align: justify;
+}
+
+.row-center {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.project .card {
+  height: 200px;
+}
+
+section.contactUs,
+section.contactUs .section-content {
+  height: auto;
+  padding: 20px 0;
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+.submit-button input[type="button"] {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.submit-button input[type="button"]:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.team .card {
+  margin: 10px 0;
+  height: 230px;
+}
+
+.team .card img {
+  height: 150px;
+  width: 50%;
+}
+section.team,
+section.team .section-content {
+  height: auto;
+  padding: 10px 0;
+}
+
+section.aboutUs {
+  height: 70vh;
+}
+
+section.aboutUs .section-content {
+  height: 40vh;
+}
+
+.my-footer {
+  width: 100%;
+  height: auto;
+  background: #17a2b8;
+  color: #fff;
+  padding: 10px;
+}
+.my-footer p {
+  color: black;
+}
+.my-footer h2 {
+  font-weight: bold;
+}
+.my-footer .creators {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 992px) {
+  section.project,
+  section.project .section-content {
+    height: auto;
+  }
+  .project .card {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    height: auto;
+  }
+  section.services {
+    height: auto;
+  }
+
+  section.services .section-content {
+    height: auto;
+  }
+  section.aboutUs {
+    height: auto;
+  }
+
+  section.aboutUs .section-content {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card.card-center {
+    margin: 25px 0;
+  }
+
+  section,
+  section .section-content,
+  section .section-heading {
+    height: auto;
+  }
+  section,
+  .section-heading {
+    padding: 0px 0 10px 0;
+  }
+
+  section.aboutUs {
+    height: auto;
+  }
+
+  section.aboutUs .section-content {
+    height: auto;
+  }
+
+  .aboutUs .company-item {
+    margin: 0 0 20px 0;
+  }
+
+  .aboutUs .card {
+    width: 90%;
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-form {
+    width: 100%;
+  }
+  .my-footer .creators p {
+    font-size: 0.9rem;
+  }
+}
